@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Nav Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        nav {
+            position: relative;
+            width: 80%;
+            max-width: 400px;
+            min-height: 70px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        #nav_btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #b6b5b5;
+            transform: scale(1.05);
+        }
+
+        .btn a {
+            display: none;
+            margin-left: 8px;
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn:hover a {
+            display: block;
+            opacity: 1;
+        }
+
+        button {
+            background: transparent;
+            font-size: 20px;
+            margin: 0;
+            cursor: pointer;
+            border: none;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        /* button:hover {
+            color: #1e3c72;
+        } */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="nav_btn">
+            <div class="btn">
+                <button><i class="fa-solid fa-house"></i></button>
+                <a href="#">Home</a>
+            </div>
+            <div class="btn">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="#">Search</a>
+            </div>
+            <div class="btn">
+                <button><i class="fa-regular fa-heart"></i></button>
+                <a href="#">Like</a>
+            </div>
+            <div class="btn">
+                <button><i class="fa-regular fa-user"></i></button>
+                <a href="#">Profile</a>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
